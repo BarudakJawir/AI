@@ -10,25 +10,29 @@ Fuzzy.py merupakan bentuk implementasi dari algoritma fuzzy untuk mengevaluasi t
 ### Langkah-langkah 
 
 ### Pertama install module module dibawah:
-## 1.Panda
+## 1. Panda
 `import pandas as pd`: Library pandas digunakan untuk membaca data dari file Excel dan mengelola data dalam bentuk DataFrame.
 ```
 pip install pandas
 ```
-2. Numpy
+## 2. Numpy
 `import numpy as np`: Library numpy digunakan untuk melakukan operasi numerik seperti membuat array dan melakukan operasi matematika.
 ```
 pip install numpy
 ```
-3. Skfuzzy
+## 3. Skfuzzy
 `import skfuzzy as fuzz`: Library skfuzzy adalah pustaka untuk pemrosesan logika fuzzy dan `from skfuzzy import control as ctrl`: Ini mengimpor modul kontrol dari pustaka skfuzzy dengan alias ctrl.
 ```
 pip install scikit-fuzzy
 ```
-4. Sklearn
+## 4. Sklearn
 `from sklearn.model_selection import train_test_split`: Modul train_test_split digunakan untuk membagi data menjadi set pelatihan dan set pengujian.
 ```
 pip install scikit-learn
 ```
-
+## 5. Openpyxl
+dapat digunakan untuk menulis dan membaca file xlsx
+```
+pip install openpyxl
+```
 
