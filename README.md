@@ -1,19 +1,27 @@
 
 <p align="center">
-  <h1 align="center">CARA IDENTIFIKASI VULNERABILITY PADA MIKROTIK MENGGUNAKAN SHODAN DAN NMAP</h1>
+  <h1 align="center">IMPLEMENTASI ALGORITMA FUZZY PADA EVALUASI KELAYAKAN OUTLET MI AYAM</h1>
 </p>
 
 ### Pendahuluan
 <h4>
-Shodan adalah sebuah mesin pencari yang dirancang untuk mencari perangkat dan sistem komputer yang terhubung dengan world Wide Web. Shodan bekerja sama seperti google namun spesifik dalam memberi tahu informasi terkait informasi banner, http, SSH, FTP, dll. dalam ethical hacking, Shodan dapat membuka semua akses menuju vulnerability sehingga bisa di patch atau diperbaki kelemahan-kelemahan yang ditemukan. NMAP adalah sebuah tools open source yang dapat digunakan untuk memeriksa audit keamanan jaringan. Dengan menggabungkan fungsi antara shodan dan Nmap, kita dapat mengetahui Vulnerability suatu jaringan, berikut adalah caranya:
+Fuzzy.py merupakan bentuk implementasi dari algoritma fuzzy untuk mengevaluasi tingkat kelayakan dari outlet mi ayam yang datanya telah termuat dalam file .xlsx yang akan dimuat kedalam code menggunakan library panda. Pada studi kasus kali ini saya menggunakan 3 variabel output yaitu kebersihan, rasa, dan harga dengan menggunakan output yaitu kelayakan outlet. Hasil evaluasi kemudian dicetak, bersama dengan nomor outlet, kebersihan, rasa, harga, dan tingkat kelayakan yang sesuai, seperti "Tidak layak", "Kurang layak", atau "layak". Dengan demikian, kode ini memberikan alat untuk menganalisis dan memahami tingkat kelayakan berdasarkan variabel kualitas kebersihan, rasa, dan harga.
 </h4>
 
 ### Langkah-langkah 
-<h4>
-Langkah pertama yang dilakukan adalah dengan mencari IP yang kemungkinan memiliki vulnerability menggunakan shodan, kali ini kita akan mencari server mikrotik yang terdapat di malaysia dengan menggunakan kata kunci mikrotik country:'my"
-</h4>
 
+### Pertama install module module dibawah:
+## 1.Panda
+<h4>
+`import pandas as pd`: Library pandas digunakan untuk membaca data dari file Excel dan mengelola data dalam bentuk DataFrame.
+untuk menginstall panda gunakan command
+</h4>
+pip install panda
 <img width="750px" src="s1.png">
+
+## 2.Numpy
+<h4>
+`import numpy as np`: Library numpy digunakan untuk melakukan operasi numerik seperti membuat array dan melakukan operasi matematika.
 
 <h4>
 Cari IP server yang kemungkinan memiliki vulnerability sehingga dapat diakses, biasanya memiliki port 22 dan 23 yang terbuka
