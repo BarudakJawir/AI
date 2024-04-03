@@ -16,7 +16,7 @@ Fuzzy.py merupakan bentuk implementasi dari algoritma fuzzy untuk mengevaluasi t
 `import pandas as pd`: Library pandas digunakan untuk membaca data dari file Excel dan mengelola data dalam bentuk DataFrame.
 untuk menginstall panda gunakan command
 </h4>
-pip install panda
+$pip install panda
 <img width="750px" src="s1.png">
 
 ## 2.Numpy
